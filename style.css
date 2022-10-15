@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+    :root{
+        --cor1: #2C3333;
+        --cor2: #395B64;
+        --cor3: #a5c9ca;
+        --cor4: #e7f6f2;
+    }
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor4);
+    margin: 0;
+    padding: 0;
+}
+.bar{
+    background-color: #252525;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+    padding: 10px;
+    display: flex;
+}
+.logo{
+    text-align: left;
+}
+nav{
+    position: fixed;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+
+.nome{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.area{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: var(--cor4);
+    background-image: linear-gradient(90deg,var(--cor1),var(--cor2));
+}
+.ithalo{
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 300px;
+}
+.ith{
+    font-size: 2em;
+}
+.contato{
+    background-color: var(--cor1);
+    width: 100px;
+    height: 50px;
+    color: var(--cor4);
+    border-radius: 3px;
+    margin-bottom: 30px;
+    font-size: 1em;
+    border: none;
+}
+
+.nome{
+    margin: 0px;
+    padding: 0px;
+}
+.contato:hover{
+    transition: all .5s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.6);
+}
+#projetos{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#projetos li{
+    text-align: left;
+    font-weight: bold;
+}
+#projetos p{
+    text-align: left;
+    font-weight: bold;
+}
+#link-topo{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+}
+.projeto_btn,.sobre_btn{
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+    margin-top: 9px;
+    border-bottom: 1px solid white;
+  }
+.links:hover{
+    transition: all 1s;
+    margin-left: 20px;
+  }
+@media only screen and (max-width: 320px) {
+    .ithalo {
+      width: 250px;
+    }
+    .links,.logo{
+        font-size: .5em;
+    }
+    .nome{
+        font-size: 1em;
+        
+    }
+    .projeto_btn,.sobre_btn{
+        margin-bottom: 10px;
+    }
+    .links:hover{
+        transition: none;
+        margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 471px) {
+    .ith{
+        font-size: 1.5em;
+    }
+  }
+  @media only screen and (max-width: 376px) {
+    .links,.logo{
+        font-size: .9em;
+    }
+  }
+
+
